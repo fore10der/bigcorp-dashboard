@@ -4,12 +4,6 @@
   </header>
 </template>
 
-<script>
-export default {
-  name: "Header"
-}
-</script>
+<script></script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

@@ -1,27 +1,22 @@
+<script setup>
+import HierarchyList from "@/components/List/HierarchyList.vue";
+import DashboardHeader from "@/components/DashboardHeader.vue";
+
+const list = ["Saul Goodman", "Laus Badwoman", "Sual Badman"];
+</script>
+
 <template>
   <div class="w-full h-full flex flex-col">
     <div class="flex-none h-16">
-      <Header/>
+      <DashboardHeader />
     </div>
     <div class="flex-auto flex">
       <div class="flex-none w-64 border-r">
-        side menu
+        <HierarchyList :list="list" />
       </div>
-      <div class="flex-auto bg-secondary">
-
-      </div>
+      <div class="flex-auto bg-secondary"></div>
     </div>
   </div>
 </template>
 
-<script>
-import Header from "@/components/Header.vue";
-export default {
-  name: "Layout",
-  components: {Header}
-}
-</script>
-
-<style scoped>
-
-</style>
+<style scoped></style>
